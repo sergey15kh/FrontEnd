@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "np-group";
+  src:url("../fonts/np-group.eot");
+  src:url("../fonts/np-group.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/np-group.woff") format("woff"),
+  url("../fonts/np-group.ttf") format("truetype"),
+  url("../fonts/np-group.svg#np-group") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "np-group" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: middle;
+  padding: 0 5px;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "np-group" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: middle;
+  padding: 0 5px;
+}
+
+.icon-logo1:before {
+  content: "\e000";
+}
+.icon-circle-arrow-right:before {
+  content: "\e001";
+}
+.icon-circle-arrow-left:before {
+  content: "\e002";
+}
+.icon-circle-arrow-up:before {
+  content: "\e003";
+}
+.icon-circle-arrow-down:before {
+  content: "\e004";
+}
+.icon-circle-arrow-right-2:before {
+  content: "\e005";
+}
+.icon-circle-arrow-left-2:before {
+  content: "\e006";
+}
+.icon-circle-arrow-up-2:before {
+  content: "\e007";
+}
+.icon-circle-arrow-down-2:before {
+  content: "\e008";
+}
+.icon-phone:before {
+  content: "\e009";
+}
+.icon-gear:before {
+  content: "\e00a";
+}
+.icon-star:before {
+  content: "\e00b";
+}
+.icon-handshake:before {
+  content: "\e00c";
+}
+.icon-facebook:before {
+  content: "\e00d";
+}
+.icon-twitter:before {
+  content: "\e00e";
+}
+.icon-instagram:before {
+  content: "\e00f";
+}
+.icon-pinterest:before {
+  content: "\e010";
+}
+.icon-search:before {
+  content: "\e011";
+}
+.icon-strategy:before {
+  content: "\e012";
+}
+.icon-design:before {
+  content: "\e013";
+}
+.icon-development:before {
+  content: "\e014";
+}
+.icon-maintenance:before {
+  content: "\e015";
+}
+.icon-marketing:before {
+  content: "\e016";
+}
+
+

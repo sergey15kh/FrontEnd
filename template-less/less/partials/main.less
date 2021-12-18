@@ -1,0 +1,72 @@
+//reset
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+ol, ul {
+  list-style: none;
+}
+//styles
+html{
+	height: 100%;
+}
+body{
+	font: 14px/1.7 Roboto, Arial, Helvetica, sans-serif;
+	min-width: 1156px;
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+  line-height: 1;
+}
+*,
+*::after,
+*::before{
+	box-sizing: border-box;
+}
+.dblock {
+	&::before,
+	&::after {
+		content: " ";
+		display: table;
+	}
+	&::after {
+		clear: both;
+	}
+}
+a{
+	text-decoration: none;
+	color: #303030;
+	&:hover,
+  &:focus{
+		text-decoration: underline;
+	}
+}
+.page-wrapper{
+	background-image: linear-gradient(48deg, #eeeeee, #fafafa);
+	display: flex;
+	flex: 1 0 auto;
+	flex-direction: row;
+}
+.page-container{
+	flex: 1;
+	padding: 32px 32px 64px;
+}
+.page-content{
+	width: 952px;
+	border-radius: 8px;
+	background-color: rgba(255, 255, 255, 0.9);
+	box-shadow: 0 32px 64px 0 rgba(0, 0, 0, 0.05);
+  @media screen and (min-width: 1156px) and (max-width: 1395px){
+    width: 772px;
+  }
+  @media screen and (min-width: 1396px) and (max-width: 1659px){
+    width: 888px;
+  }
+}

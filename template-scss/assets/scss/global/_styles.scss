@@ -1,0 +1,13 @@
+body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+#wrapper {}
+
+.layout {
+	@include box;
+	width:1170px;
+	margin:0 auto;
+}

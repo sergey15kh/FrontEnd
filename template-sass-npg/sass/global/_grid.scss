@@ -1,0 +1,188 @@
+
+.row {
+  @include box_treatment;
+  position: relative;
+  float: left;
+  width: 100%;
+  height: auto;
+  padding: 5px 0;
+
+  &:before, &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+
+
+}
+
+[class^="col"], [class*=" col"] {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position: relative;
+  float: left;
+  width: $cw;
+  margin: 0 $mw;
+  min-height: 50px;
+  @include box_treatment;
+
+
+  &:before, &:after {
+    content: " ";
+    display: table;
+    clear: both;
+    position: relative;
+  }
+}
+.color{
+  [class^="col"], [class*=" col"] {
+    background-color: grey;
+  }
+  .container{
+    background: black;
+  }
+}
+[class^="col"].center-box,[class*=" col"].center-box {
+  margin: auto;
+  float: none !important;
+  display: block;
+}
+
+//---Variable Sizes----------------------------------//
+
+$col-2-width: calc((#{$cw} * 2) + (#{$mw} * 2));
+
+$col-3-width: calc((#{$cw} * 3) + (#{$mw} * 4));
+
+$col-4-width: calc((#{$cw} * 4) + (#{$mw} * 6));
+
+$col-5-width: calc((#{$cw} * 5) + (#{$mw} * 8));
+
+$col-6-width: calc((#{$cw} * 6) + (#{$mw} * 10));
+
+$col-7-width: calc((#{$cw} * 7) + (#{$mw} * 12));
+
+$col-8-width: calc((#{$cw} * 8) + (#{$mw} * 14));
+
+$col-9-width: calc((#{$cw} * 9) + (#{$mw} * 16));
+
+$col-10-width: calc((#{$cw} * 10) + (#{$mw} * 18));
+
+$col-11-width: calc((#{$cw} * 11) + (#{$mw} * 20));
+
+$col-12-width: calc((#{$cw} * 12) + (#{$mw} * 22));
+
+$col-13-width: calc((#{$cw} * 13) + (#{$mw} * 24));
+
+$col-14-width: calc((#{$cw} * 14) + (#{$mw} * 26));
+
+$col-15-width: calc((#{$cw} * 15) + (#{$mw} * 28));
+
+$col-16-width: calc((#{$cw} * 16) + (#{$mw} * 30));
+
+//----columns----------------------------------------//
+
+.col-2 {
+  width: $col-2-width;
+}
+
+.col-3 {
+  width: $col-3-width;
+}
+
+.col-4 {
+  width: $col-4-width;
+}
+
+.col-5 {
+  width: $col-5-width;
+}
+
+.col-6 {
+  width: $col-6-width;
+}
+
+.col-7 {
+  width: $col-7-width;
+}
+
+.col-8 {
+  width: $col-8-width;
+}
+
+.col-9 {
+  width: $col-9-width;
+}
+
+.col-10 {
+  width: $col-10-width;
+}
+
+.col-11 {
+  width: $col-11-width;
+}
+
+.col-12 {
+  width: $col-12-width;
+}
+
+.col-13 {
+  width: $col-13-width;
+}
+
+.col-14 {
+  width: $col-14-width;
+}
+
+.col-15 {
+  width: $col-15-width;
+}
+
+.col-16 {
+  width: $col-16-width;
+}
+
+//---Animations ----------------------------//
+
+.animate {
+  @include transition-treatment-2;
+  @include opacity(1);
+  @include transition-delay(.2s);
+
+  &:nth-child(odd) {
+    @include transition-delay(.3s);
+  }
+}
+
+.fade-in {
+  @include opacity(0);
+}
+
+//----Development Grid -----------------------//
+
+.dev-grid {
+  @include opacity(0);
+  @include transition-treatment-1;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999999999;
+  pointer-events: none;
+  padding: 0;
+  margin: 0 auto !important;
+
+  .container { height: 100%; padding: 0;}
+
+  [class^="col-"], [class*=" col-"] {
+    height: 100%;
+    background-color: yellow;
+  }
+
+  &.on {
+    @include opacity(0.4);
+  }
+
+
+}

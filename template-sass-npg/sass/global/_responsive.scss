@@ -1,0 +1,172 @@
+//* Reponsive Variables ---------------------------------------*/
+
+$wdl: 1408px; /*width-desktop-medium*/
+$wdm: 1248px; /*width-desktop-medium*/
+$wds: 1008px;  /*width- desktop-small*/
+$wt: 768px;   /*width-tablet*/
+$wml: 736px;   /*width-tablet*/
+$wm: 100%;     /*width-mobile*/
+
+/*---Grid Variables -----------------------------------------*/
+
+$cw: 4.119318181818182%;
+$mw: 1.065340909090909%;
+
+@mixin breakpoint($class) {
+
+  @if $class == desktop-medium {
+    @media (max-width: $wdl) { @content; }
+  }
+
+  @if $class == desktop-small {
+    @media (max-width: $wdm) { @content; }
+  }
+
+  @if $class == tablet {
+    @media (max-width: $wds) { @content; }
+  }
+
+  @if $class == mobile-large {
+    @media (max-width: $wt) { @content; }
+  }
+
+  @if $class == mobile {
+    @media (max-width: $wml) { @content; }
+  }
+
+}
+
+.container {
+  @include box_treatment;
+  width: 100%;
+  max-width: $wdl;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+
+  &:before,
+  &:after {
+    content:"";
+    display:table;
+    position: relative;
+  }
+
+  &:after {
+    clear:both;
+  }
+
+  @include breakpoint(desktop-medium) {
+    max-width: $wdm;
+  }
+
+  @include breakpoint(desktop-small) {
+    max-width: $wds;
+  }
+
+  @include breakpoint(tablet) {
+    max-width: $wt;
+  }
+
+  @include breakpoint(mobile-large) {
+    max-width: $wml;
+  }
+
+  @include breakpoint(mobile) {
+    max-width: $wm;
+  }
+}
+
+
+//---Variable Sizes----------------------------------//
+
+$col-2-width: calc((#{$cw} * 2) + (#{$mw} * 2));
+
+$col-3-width: calc((#{$cw} * 3) + (#{$mw} * 4));
+
+$col-4-width: calc((#{$cw} * 4) + (#{$mw} * 6));
+
+$col-5-width: calc((#{$cw} * 5) + (#{$mw} * 8));
+
+$col-6-width: calc((#{$cw} * 6) + (#{$mw} * 10));
+
+$col-7-width: calc((#{$cw} * 7) + (#{$mw} * 12));
+
+$col-8-width: calc((#{$cw} * 8) + (#{$mw} * 14));
+
+$col-9-width: calc((#{$cw} * 9) + (#{$mw} * 16));
+
+$col-10-width: calc((#{$cw} * 10) + (#{$mw} * 18));
+
+$col-11-width: calc((#{$cw} * 11) + (#{$mw} * 20));
+
+$col-12-width: calc((#{$cw} * 12) + (#{$mw} * 22));
+
+$col-13-width: calc((#{$cw} * 13) + (#{$mw} * 24));
+
+$col-14-width: calc((#{$cw} * 14) + (#{$mw} * 26));
+
+$col-15-width: calc((#{$cw} * 15) + (#{$mw} * 28));
+
+$col-16-width: calc((#{$cw} * 16) + (#{$mw} * 30));
+
+//----columns----------------------------------------//
+
+.col-2 {
+  width: $col-2-width;
+}
+
+.col-3 {
+  width: $col-3-width;
+}
+
+.col-4 {
+  width: $col-4-width;
+}
+
+.col-5 {
+  width: $col-5-width;
+}
+
+.col-6 {
+  width: $col-6-width;
+}
+
+.col-7 {
+  width: $col-7-width;
+}
+
+.col-8 {
+  width: $col-8-width;
+}
+
+.col-9 {
+  width: $col-9-width;
+}
+
+.col-10 {
+  width: $col-10-width;
+}
+
+.col-11 {
+  width: $col-11-width;
+}
+
+.col-12 {
+  width: $col-12-width;
+}
+
+.col-13 {
+  width: $col-13-width;
+}
+
+.col-14 {
+  width: $col-14-width;
+}
+
+.col-15 {
+  width: $col-15-width;
+}
+
+.col-16 {
+  width: $col-16-width;
+}

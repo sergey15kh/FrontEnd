@@ -1,0 +1,156 @@
+/* Brand Fonts & Treatment -------------------------------------*/
+
+.h1 {
+  font:{family: $brand-font-1; weight: $base-font-weight;}
+  @include font-size(31);
+  line-height: 1;
+  margin: 0;
+  color: $primary-color;
+}
+
+.h2 {
+  font:{family: $brand-font-1; weight: $base-font-weight}
+  @include font-size(27);
+  line-height: 1;
+  margin: 0;
+}
+
+.h3 {
+  font:{family: $brand-font-1; weight: 300;}
+  @include font-size(21);
+  line-height: 1;
+  margin: 0;
+  color: $primary-color;
+}
+
+.h4 {
+  font:{family: $brand-font-1; weight: $base-font-weight}
+  @include font-size(18);
+  line-height: 1;
+  margin: 0;
+  color: $primary-color;
+}
+
+.h5 {
+  font:{family: $brand-font-1; weight: $base-font-weight;}
+  @include font-size(17);
+  line-height: 1;
+  margin:0;
+}
+
+.h6 {
+  font:{family: $brand-font-1; weight: $base-font-weight;}
+  @include font-size(16);
+  line-height: 1;
+  margin: 0;
+}
+h1 { @extend .h1; margin: 1em 0 0.5em;}
+h2 { @extend .h2; margin: 1em 0 0.5em;}
+h3 { @extend .h3; margin: 1em 0 0.5em;}
+h4 { @extend .h4; margin: 1em 0 0.5em;}
+h5 { @extend .h5; margin: 1em 0 0.5em;}
+h6 { @extend .h6; margin: 1em 0 0.5em;}
+p {
+  font:{family: $brand-font-1; weight: 300; @include font-size(16);}
+  padding: 0;
+  line-height: 1.35em;
+  margin: 0 0 25px;
+}
+
+.link {
+  color: $primary-color;
+  text-decoration: none;
+  &:hover, &.hovered{
+
+  }
+  &:active {
+    color: inherit;
+  }
+  &.visited{
+  }
+}
+b{
+  font-weight: 600; color: $font-color;
+}
+a {
+  @extend .link;
+  outline: none !important;
+  &:visited{
+    //  color: $ligth-color;
+  }
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+  padding: 10px 25px;
+  @include breakpoint(mobile) {
+    padding: 10px;
+  }
+  li {
+    position: relative;
+    text-decoration: none;
+    font:{family: $brand-font-1; weight: 300;}
+    line-height: 1.35em;
+    padding-left: 48px;
+    margin: 0 0 27px;
+    @include breakpoint(mobile) {
+      padding-left: 20px;
+    }
+    &:before {
+      position: absolute;
+      left: 25px;
+      top: 0;
+      content: "\00B7";
+      color: $primary-color;
+      font-weight: 400;
+      width: 1px;
+      height: 1px;
+      font-size: 28px;
+      @include font-size(20);
+      line-height: 1em;
+      @include breakpoint(mobile) {
+        left:0;
+      }
+    }
+  }
+}
+ol{
+  margin: 0;
+  padding: 10px 25px;
+  list-style-type: none;
+  counter-reset: point;
+  @include breakpoint(mobile) {
+    padding: 10px;
+  }
+  li{
+    margin: 0 0 20px;
+    padding: 0 0 0 50px;
+    line-height: 1.8em;
+    list-style: none;
+    position: relative;
+    &:before {
+      counter-increment: point 1;
+      content: counter(point)".";
+      position: absolute;
+      left: 20px;
+      top: 0;
+      width: 20px;
+      height: 14px;
+      line-height: 1.8em;
+      @include font-size(14);
+      color: $primary-color;
+      text-align: center;
+    }
+  }
+}
+
+
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 600;
+}

@@ -1,0 +1,92 @@
+
+.button-1 ,
+input.button-1 ,
+button.button-1 ,
+a.button-1 {
+  color: #fff;
+  background-color: $primary-color;
+  display: inline-block;
+  padding: 20px 15px;
+  font-weight: 600;
+  margin: auto;
+  margin-top: 20px;
+  border-bottom: none;
+
+  &:after {
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    vertical-align: middle;
+    padding: 0 10px;
+    content: "\25bb";
+  }
+
+  &:hover {
+    background-color: $secondary-color;
+    color: #fff;
+  }
+}
+
+.button-2 ,
+input.button-2 ,
+button.button-2 ,
+a.button-2 {
+  color: #fff;
+  background-color: $primary-color;
+  @extend .button-1;
+
+  &:hover {
+    background-color: grey;
+    color: #fff;
+  }
+}
+
+
+.button-3 ,
+input.button-3 ,
+button.button-3 ,
+a.button-3 {
+  color: #fff;
+  background-color: #000;
+  @extend .button-1;
+
+  &:hover {
+    background-color: grey;
+    color: #fff;
+  }
+}
+
+.button-4 ,
+input.button-4 ,
+button.button-4 ,
+a.button-4 {
+  color: $primary-color;
+  background-color: #fff;
+  border: 1px solid $primary-color;
+  @extend .button-1;
+
+  &:hover {
+    background-color: $primary-color;
+    color: #fff;
+  }
+}
+.button-5 ,
+input.button-5 ,
+button.button-5 ,
+a.button-5 {
+  color: $primary-color;
+  background-color: #fff;
+  border: 1px solid $primary-color;
+  @extend .button-1;
+
+  &:hover {
+    background-color: $primary-color;
+    color: #fff;
+    border-color: $primary-color;
+  }
+}
