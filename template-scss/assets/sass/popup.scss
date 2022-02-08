@@ -10,6 +10,7 @@
 	height: 100%;
 	transition: visibility 0.8s ease 0s;
 	visibility: hidden;
+
 	&::before {
 		content: "";
 		background-color: rgba(0, 0, 0, 0.9);
@@ -21,27 +22,34 @@
 		opacity: 0;
 		transition: opacity 0.8s ease 0s;
 	}
+
 	&.show {
 		visibility: visible;
 		overflow: auto;
+
 		&::before {
 			opacity: 1;
 		}
+
 		.popup__body {
 			transform: scale(1);
 		}
 	}
+
 	&._active {
 		overflow: auto;
 		visibility: visible;
+
 		&::before {
 			opacity: 1;
 		}
+
 		.popup__body {
 			transition: all 0.3s ease 0.2s;
 			transform: scale(1);
 		}
 	}
+
 	// .popup__content
 	&__content {
 		display: flex;
@@ -54,6 +62,7 @@
 		justify-content: center;
 		align-items: center;
 	}
+
 	// .popup__body
 	&__body {
 		transform: scale(0);
@@ -63,6 +72,7 @@
 		width: 100%;
 		max-width: 800px;
 	}
+
 	// .popup__close
 	&__close {
 		width: 15px;
@@ -75,5 +85,72 @@
 		background: url("../images/icons/close.svg") 0 0 no-repeat;
 	}
 }
+
 //====================================================================================================
+//====================================================================================================
+
+//====================================================================================================
+// POPUP №2 ONLY STYLES
+//====================================================================================================
+.popupcss {
+	text-align: center;
+	// .popupcss__box
+	// &__box {
+	// }
+	// .popupcss__content
+	&__content {
+		margin: 70px auto;
+		padding: 20px;
+		background: #fff;
+		border-radius: 5px;
+		width: 30%;
+		position: relative;
+		transition: all 5s ease-in-out;
+	}
+}
+.popup {
+	// .popup__button
+	&__button {
+		font-size: 1em;
+		padding: 10px;
+		color: #333;
+		cursor: pointer;
+	}
+	// .popup__content
+	&__content {
+		max-height: 30%;
+		overflow: auto;
+	}
+}
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+	&:target {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+.close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
+	&:hover {
+		color: #06D85F;
+	}
+}
+
+//====================================================================================================
+// POPUP №2 ONLY STYLES
 //====================================================================================================
