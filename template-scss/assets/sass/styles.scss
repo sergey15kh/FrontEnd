@@ -68,16 +68,16 @@ body {
 	max-width: $maxWidthContainer + px;
 	margin: 0 auto;
 	padding: 1.25rem;
-	@media (max-width: $md1 + px) {
-		max-width: 970px;
-	}
-	@media (max-width: $md2+px) {
-		max-width: 750px;
-	}
-	@media (max-width: $md3+px) {
-		max-width: none;
-		padding: 0 10px;
-	}
+	// @media (max-width: $md1 + px) {
+	// 	max-width: 970px;
+	// }
+	// @media (max-width: $md2+px) {
+	// 	max-width: 750px;
+	// }
+	// @media (max-width: $md3+px) {
+	// 	max-width: none;
+	// 	padding: 0 10px;
+	// }
 }
 //</ОСНОВНАЯ СЕТКА>===========================================================================================================
 
@@ -102,6 +102,7 @@ body {
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================
 
+//</ОСНОВНОЙ БЛОК>====================================================================================================
 //</MEDIA Запросы>====================================================================================================
 /*
 @media (min-width: 1921px){}
@@ -136,6 +137,7 @@ body {
 	}
 	// .spollers-block__body
 	&__body {
-		display: none;
+		background-color: rgb(230, 173, 99);
+		color: #000;
 	}
 }
