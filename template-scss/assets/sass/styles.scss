@@ -38,6 +38,8 @@ $md3: 767.98;
 $md4: 479.98;
 $mainColor: #000;
 $mainBackgroundColor: #fff;
+
+$colorwhite: #ffffff;
 //</ПЕРЕМЕННЫЕ>===========================================================================================================
 
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
@@ -67,7 +69,7 @@ body {
 .container {
 	max-width: $maxWidthContainer + px;
 	margin: 0 auto;
-	padding: 1.25rem;
+	// padding: 1.25rem;
 	// @media (max-width: $md1 + px) {
 	// 	max-width: 970px;
 	// }
@@ -88,7 +90,6 @@ body {
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 @import "popup";
 @import "ui";
-@import "menu";
 @import "header";
 @import "footer";
 @import "home";
@@ -121,23 +122,3 @@ body {
 */
 //</MEDIA Запросы>====================================================================================================
 
-.spollers-block {
-	// .spollers-block__item
-	&__item {
-		width: 300px;
-		margin: 0 auto;
-	}
-	// .spollers-block__title
-	&__title {
-		background-color: #000;
-		color: #fff;
-		padding: 20px;
-		cursor: pointer;
-		position: relative;
-	}
-	// .spollers-block__body
-	&__body {
-		background-color: rgb(230, 173, 99);
-		color: #000;
-	}
-}

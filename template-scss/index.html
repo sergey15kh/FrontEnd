@@ -15,17 +15,42 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
-			<div class="header__container _container">
-				header
+			<div class="container">
+				<div class="header__logo"><a href="#">Logo</a></div>
+				<nav class="header__nav">
+					<ul class="menu">
+						<li class="menu__item">
+							<a href="#" class="menu__link">LinkMenu</a>
+							<ul class="submenu">
+								<li class="submenu__item">
+									<a href="#" class="submenu__link">submenulink</a>
+									<a href="#" class="submenu__link">submenulink</a>
+									<a href="#" class="submenu__link">submenulink</a>
+									<a href="#" class="submenu__link">submenulink</a>
+									<a href="#" class="submenu__link">submenulink</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu__item"><a href="#" class="menu__link">LinkMenu</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">LinkMenu</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">LinkMenu</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">LinkMenu</a></li>
+					</ul>
+					<div class="burger-menu">
+						<svg class="burgerIcon burgerRotate burger-tolls" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')"> <path class="line top" d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" /> <path class="line middle" d="m 30,50 h 40" /> <path class="line bottom" d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" /> </svg>
+					</div>
+				</nav>
 			</div>
 		</header>
 
 		<main class="page">
-			
+			<div class="container">
+				main
+			</div>
 		</main>
 
 		<footer class="footer">
-			<div class="footer__container _container">
+			<div class="container">
 				footer
 			</div>
 		</footer>
