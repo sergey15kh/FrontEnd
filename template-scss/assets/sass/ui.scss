@@ -294,3 +294,29 @@ body.ie {
 	}
   }
 //</scrollTo>====================================================================================================
+.loadmore__item{
+display:none;
+}
+  
+.content{
+background-color:#333;
+height:200px;
+margin:10px 0;
+border:1px solid #ccc;
+}
+
+.load-more{
+background-color:#000;
+color:#fff !important;
+padding:5px 10px;
+border-radius:4px;
+font-size:20px;
+margin:50px 0;
+display:inline-block;
+}
+
+.load-more:hover{
+background-color:blue;
+text-decoration:none;
+}
+

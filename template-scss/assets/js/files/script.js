@@ -36,14 +36,14 @@ btn.on('click', function(e) {
   e.preventDefault();
   $('html, body').animate({scrollTop:0}, '300');
 });
-
-
+//=================
+//LoadMore
 $(function () {
-  $(".col-md-4").slice(0, 3).show();
+  $(".loadmore__item").slice(0, 3).show();
   $("body").on('click touchstart', '.load-more', function (e) {
     e.preventDefault();
-    $(".col-md-4:hidden").slice(0, 3).slideDown();
-    if ($(".col-md-4:hidden").length == 0) {
+    $(".loadmore__item:hidden").slice(0, 3).slideDown();
+    if ($(".loadmore__item:hidden").length == 0) {
       $(".load-more").css('visibility', 'hidden');
     }
     $('html,body').animate({
