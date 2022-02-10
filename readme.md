@@ -34,7 +34,7 @@
 - <a href="https://github.com/shipshapecode/shepherd">Nice select  —   Библиотека jQuery для создания красивых полей выбора</a>
 - <a href="https://select2.org/appearance">Select2  —  Настройка полей выбора с помощью jQuery</a>
 
-#  JavaScript библиотеки #
+#  CSS библиотеки #
 - <a href="https://animate.style/">Animate.css  — Библиотека анимаций</a>
 - <a href="https://flatuicolors.com/">Flat UI Colors  — Список простых и эффективных цветовых гамм</a>
 - <a href="https://getmdl.io/index.html">Flat UI Colors  — Список простых и эффективных цветовых гамм</a>
@@ -43,7 +43,4 @@
 - <a href="https://www.minimamente.com/project/magic/">Magic animations  — Что ж, из названия и так все ясно…</a>
 - <a href="https://webkul.github.io/csspin/">CSSpin  — Коллекция виртуальных CSS-спиннеров для вашего сайта</a>
 - <a href="https://proto.io/freebies/onoff/">On/Off switch  —  Создание переключателя «on/off» с помощью CSS</a>
-- <a href=""></a>
-- <a href=""></a>
 
-##Моноширинный текст##
