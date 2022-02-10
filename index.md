@@ -5,10 +5,17 @@
 ## FrontEnd инструменты
 
 ### Проверка по стандартам
-- <a href="https://validator.w3.org/#validate_by_input">Валидатор W3C — проверяем, валидный ли мы написали HTML</a>
-- <a href="https://caniuse.com/">Проверяем, как браузеры прямо сейчас поддерживают разные свойства</a>
+1. <a href="https://validator.w3.org/#validate_by_input">Валидатор W3C — проверяем, валидный ли мы написали HTML</a>
+2. <a href="https://caniuse.com/">Проверяем, как браузеры прямо сейчас поддерживают разные свойства</a>
 
-
+### Проверка вёрстки и стилей
+1. <a href="https://www.welldonecode.com/perfectpixel/">Плагин для проверки того, насколько вёрстка близка к макету</a>
+2. <a href="https://chrome.google.com/webstore/detail/css-peeper/mbnbehikldjhnfehhnaidhjhoofhpehk?hl=en">Расширение, чтобы быстро промониторить стили, картинки,  и снять размеры без открытия инструментов разработчика.</a>
+- <a href=""></a>
+- <a href=""></a>
+- <a href=""></a>
+- <a href=""></a>
+- <a href=""></a>
 
 Can I use — проверяем, как браузеры прямо сейчас поддерживают разные свойства, теги, API и технологии. Даже Opera Mini, хотя казалось бы.
 
