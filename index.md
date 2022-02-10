@@ -2,9 +2,11 @@
 
 Полезные инструменты, библиотек и ресурсов для экономии времени веб-разработчиков
 
-### Markdown
+### FrontEnd инструменты
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+
+```FrontEnd инструменты```
 
 ```markdown
 Syntax highlighted code block
