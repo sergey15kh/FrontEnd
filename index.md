@@ -11,47 +11,9 @@
 ### Проверка вёрстки и стилей
 1. <a href="https://www.welldonecode.com/perfectpixel/">Плагин для проверки того, насколько вёрстка близка к макету</a>
 2. <a href="https://chrome.google.com/webstore/detail/css-peeper/mbnbehikldjhnfehhnaidhjhoofhpehk?hl=en">Расширение, чтобы быстро промониторить стили, картинки,  и снять размеры без открытия инструментов разработчика.</a>
-- <a href=""></a>
-- <a href=""></a>
-- <a href=""></a>
-- <a href=""></a>
-- <a href=""></a>
 
-Can I use — проверяем, как браузеры прямо сейчас поддерживают разные свойства, теги, API и технологии. Даже Opera Mini, хотя казалось бы.
 
-Can I include — проверяем, можно ли вложить один тег в другой, и если нельзя, то почему. Всё подробно показывают и рассказывают со ссылками на спецификацию.
-
-```FrontEnd инструменты```
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sergey15kh/Markup-Start/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
-
-#  JavaScript библиотеки #
+## JavaScript библиотеки
 
 - <a href="https://vincentgarreau.com/particles.js/">Particles.js</a>
 - <a href="https://threejs.org/">threejs.org - Библиотека для создания на веб-странице 3D-объектов и 3D-визуализации</a>
@@ -87,7 +49,7 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 - <a href="https://github.com/shipshapecode/shepherd">Nice select  —   Библиотека jQuery для создания красивых полей выбора</a>
 - <a href="https://select2.org/appearance">Select2  —  Настройка полей выбора с помощью jQuery</a>
 
-#  CSS библиотеки #
+## CSS библиотеки
 - <a href="https://animate.style/">Animate.css  — Библиотека анимаций</a>
 - <a href="https://flatuicolors.com/">Flat UI Colors  — Список простых и эффективных цветовых гамм</a>
 - <a href="https://getmdl.io/index.html">Flat UI Colors  — Список простых и эффективных цветовых гамм</a>
@@ -97,7 +59,7 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 - <a href="https://webkul.github.io/csspin/">CSSpin  — Коллекция виртуальных CSS-спиннеров для вашего сайта</a>
 - <a href="https://proto.io/freebies/onoff/">On/Off switch  —  Создание переключателя «on/off» с помощью CSS</a>
 
-#  Плагины #
+## Плагины
 - <a href=""></a>
 - <a href=""></a>
 - <a href=""></a>
