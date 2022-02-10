@@ -1,4 +1,4 @@
-#  Библиотеки #
+#  JavaScript библиотеки #
 
 - <a href="https://vincentgarreau.com/particles.js/">Particles.js</a>
 - <a href="https://threejs.org/">threejs.org - Библиотека для создания на веб-странице 3D-объектов и 3D-визуализации</a>
@@ -27,18 +27,21 @@
 - <a href="https://keycode.info/">Keycode  —   JavaScript-код для отображения числовых значений при нажатии клавиш</a>
 - <a href="http://projects.sergiodinislopes.pt/flexdatalist/">Flexdatalist  —  Примеры кода для авто-заполнения поиска</a>
 - <a href="https://jquerymy.com/#/">JQuerymy  — Двусторонняя привязка данных с помощью jQuery</a>
-- <a href=""></a>
-- <a href=""></a>
-- <a href=""></a>
-- <a href=""></a>
-- <a href=""></a>
-- <a href=""></a>
-- <a href=""></a>
-- <a href=""></a>
-- <a href=""></a>
-- <a href=""></a>
-- <a href=""></a>
+- <a href="https://nosir.github.io/cleave.js/">Cleave.js  —   Форматирование содержимого при наборе текста</a>
+- <a href="https://selectize.dev/">Selectize.js  —  Поля смешанного выбора для добавления тегов</a>
+- <a href="https://jqueryniceselect.hernansartorio.com/">Nice select  —   Библиотека jQuery для создания красивых полей выбора</a>
+- <a href="http://tether.io/">Nice select  —   Библиотека jQuery для создания красивых полей выбора</a>
+- <a href="https://github.com/shipshapecode/shepherd">Nice select  —   Библиотека jQuery для создания красивых полей выбора</a>
+- <a href="https://select2.org/appearance">Select2  —  Настройка полей выбора с помощью jQuery</a>
 
-
-
+#  JavaScript библиотеки #
+- <a href="https://animate.style/">Animate.css  — Библиотека анимаций</a>
+- <a href="https://flatuicolors.com/">Flat UI Colors  — Список простых и эффективных цветовых гамм</a>
+- <a href="https://getmdl.io/index.html">Flat UI Colors  — Список простых и эффективных цветовых гамм</a>
+- <a href="http://topcoat.io/">Topcoat  — Фреймворк для создания веб-приложений</a>
+- <a href="https://www.kirupa.com/html5/ken_burns_effect_css.htm">Create ken burns effect  —  Создание эффекта «Ken burns»</a>
+- <a href="https://www.minimamente.com/project/magic/">Magic animations  — Что ж, из названия и так все ясно…</a>
+- <a href="https://webkul.github.io/csspin/">CSSpin  — Коллекция виртуальных CSS-спиннеров для вашего сайта</a>
+- <a href="https://proto.io/freebies/onoff/">On/Off switch  —  Создание переключателя «on/off» с помощью CSS</a>
+- <a href=""></a>
 - <a href=""></a>
