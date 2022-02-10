@@ -44,3 +44,12 @@
 - <a href="https://webkul.github.io/csspin/">CSSpin  — Коллекция виртуальных CSS-спиннеров для вашего сайта</a>
 - <a href="https://proto.io/freebies/onoff/">On/Off switch  —  Создание переключателя «on/off» с помощью CSS</a>
 
+#  Плагины #
+- <a href=""></a>
+- <a href=""></a>
+- <a href=""></a>
+- <a href=""></a>
+- <a href=""></a>
+- <a href=""></a>
+- <a href=""></a>
+
