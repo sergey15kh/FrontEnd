@@ -49,11 +49,16 @@ $colorwhite: #ffffff;
 body {
 	color: $mainColor;
 	background-color: $mainBackgroundColor;
-
+	transition: all 300ms ease-in-out;
 	&._lock {
 		overflow: hidden;
 	}
+	&.active {
+		background-color: #000;
+		color: #fff;
+	}
 }
+
 
 //</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
 
@@ -65,7 +70,8 @@ body {
 	display: flex;
 	flex-direction: column;
 
-	&.loaded {}
+	&.loaded {
+	}
 }
 
 //</ОБОЛОЧКА>===========================================================================================================
@@ -129,3 +135,5 @@ body {
 @media (max-width: 767px) {}
 */
 //</MEDIA Запросы>====================================================================================================
+
+ 
