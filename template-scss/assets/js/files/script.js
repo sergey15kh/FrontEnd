@@ -36,5 +36,31 @@ btn.on('click', function(e) {
   e.preventDefault();
   $('html, body').animate({scrollTop:0}, '300');
 });
+//=================
+//LoadMore
+$(function () {
+  $(".loadmore__item").slice(0, 3).show();
+  $("body").on('click touchstart', '.load-more', function (e) {
+    e.preventDefault();
+    $(".loadmore__item:hidden").slice(0, 3).slideDown();
+    if ($(".loadmore__item:hidden").length == 0) {
+      $(".load-more").css('visibility', 'hidden');
+    }
+    $('html,body').animate({
+      scrollTop: $(this).offset().top
+    }, 1000);
+  });
+});
+//=================
+//Перезагрузка  страницы при ресайзе браузера во всех платформах  кроме iOS
+var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+if (iOS){
 
-
+}
+else{
+	$(function() {
+		$(window).resize(function(){
+			location.reload();
+		});
+	});
+}
