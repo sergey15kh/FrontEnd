@@ -15,79 +15,72 @@
 
 	&__nav {
 		margin-left: auto;
-	}
-}
-
-.menu {
-	display: flex;
-	@include transition_200;
-	@media (max-width: 767px) {
-		position: absolute;
-		top: 80px;
-		right: 0;
-		display: flex;
-		flex-direction: column;
-		background-color: aqua;
-		opacity: 0;
-		visibility: hidden;
-		&.active {
-			opacity: 1;
-			visibility: visible;
-		}
-	}
-	&__item {
-		position: relative;
-		margin-right: 10px;
-
-		&:hover {
-			.submenu {
+		@include transition_200;
+		@media (max-width: 767px) {
+			position: absolute;
+			top: 80px;
+			right: 0;
+			display: flex;
+			flex-direction: column;
+			background-color: aqua;
+			opacity: 0;
+			visibility: hidden;
+			&.active {
 				opacity: 1;
 				visibility: visible;
 			}
 		}
-
-		&:last-child {
-			margin-right: 0;
+		ul {
+			display: flex;
+			li {
+				position: relative;
+				margin-right: 10px;
+				a {
+					color: $colorwhite;
+					font-size: 14px;
+					line-height: 22px;
+				}
+				.submenu {
+					@include transition_200;
+					position: absolute;
+					top: 50px;
+					left: 0;
+					width: 300px;
+					background-color: rgb(4, 98, 175);
+					opacity: 0;
+					visibility: hidden;
+					display: flex;
+					flex-direction: column;
+					@media (max-width: 767px) {
+						position: relative;
+						opacity: 1;
+						visibility: visible;
+						top: 0;
+						background-color: transparent;
+					}
+					li {
+						margin-bottom: 10px;
+						a {
+							color: $colorwhite;
+							font-size: 14px;
+							line-height: 22px;
+						}
+						&:last-child {
+							margin-bottom: 0;
+						}
+					}
+				}
+				&:hover {
+					.submenu {
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+				&:last-child {
+					margin-right: 0;
+				}
+			}
 		}
-	}
-
-	&__link {
-		color: $colorwhite;
-		font-size: 14px;
-		line-height: 22px;
-	}
-}
-
-.submenu {
-	@include transition_200;
-	position: absolute;
-	top: 50px;
-	left: 0;
-	width: 300px;
-	background-color: rgb(4, 98, 175);
-	opacity: 0;
-	visibility: hidden;
-	@media (max-width: 767px) {
-		position: relative;
-		opacity: 1;
-		visibility: visible;
-		top: 0;
-		background-color: transparent;
-	}
-	&__item {
-		display: flex;
-		flex-direction: column;
-		margin-bottom: 10px;
-
-		&:last-child {
-			margin-bottom: 0;
-		}
-	}
-
-	&__link {
-		color: $colorwhite;
-		font-size: 14px;
-		line-height: 22px;
 	}
 }
 //====================================================================================================
